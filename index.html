@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Aurora Medical offers the best, most affordable Covid-19 test and prevention schemes for travellers of all ages to be able to travel fuss-free, without worry. Aurora medical offers Covid-19 related services of all kinds for all purposes. ">
+    <meta name="keywords" content="Mobile Departure Swab test, PCR Test, Covid-19 Test, Aurora Medical">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+    <title>Aurora Medical</title>
+    <link rel="icon"
+        href="https://i.natgeofe.com/n/63527567-9a8b-4b08-819d-a6142fb2b350/aurora-kirkjufell-iceland_4x3.jpg"
+        type="image/x-icon">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!--Flags import https://github.com/lipis/flag-icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
+
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/0ef6f85575.js" crossorigin="anonymous"></script>
+
+    <style>
+        /* general css */
+        h1 {
+            font-family: 'Playfair Display', sans-serif;
+        }
+        ::selection {
+            color: white;
+            background: #FEBB60;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333333;
+        }
+
+        .dropdown-menu {
+            border: none !important;
+        }
+
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 300;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            cursor: default;
+            color: #333333;
+        }
+
+        /*Start of Navbar*/
+        .navbtn {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 300;
+            text-decoration: none;
+            color: #41B188;
+            cursor: pointer;
+            font-size: 1rem
+        }
+
+        .navbtn:hover {
+            color: #41B188;
+        }
+
+        .hover-underline-animation {
+            display: inline-block;
+            position: relative;
+            color: #333333;
+            font-weight: 300;
+        }
+
+        .hover-underline-animation:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #41B188;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .hover-underline-animation:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        .bookbtn {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 400;
+            border: none;
+            white-space: nowrap;
+            font-size: 1rem;
+            transition: 0.25s ease-in-out;
+            color: white;
+            background-color: #41B188;
+        }
+
+        .bookbtn:hover {
+            color: white;
+            background-color: #FEBB60;
+            border: 0px #FEBB60 solid;
+        }
+        /*Navbar css ends here*/
+
+        /* hero banner css starts */
+        .hero-banner {
+            min-height: 80vh;
+            background-image: url('./assets/images/index3.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: darken;
+            background-color: rgba(0, 0, 0, 0.285);
+            padding: 5%;
+        }
+
+        .herotitle {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .herotext {
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 1.25rem;
+            color: white;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+
+        .button {
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid white;
+            padding: 1rem;
+            transition: all 0.3s;
+        }
+
+        .button:hover {
+            color: #333333;
+            background-color: white;
+        }
+
+        .heromodule {
+            width: 100%;
+            height: 45vw;
+            position: relative;
+        }
+
+        .heromodule::before {
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-image: url(https://st3.depositphotos.com/1643295/18071/i/450/depositphotos_180717236-stock-photo-confident-smiling-asian-doctors-looking.jpg);
+            background-size: cover;
+            filter: brightness(75%);
+        }
+
+        .hero-module-inside {
+            position: relative;
+        }
+
+        .hero {
+            width: 100%;
+            margin: 0;
+            height: 70vh;
+            color: white;
+        }
+
+        img {
+            object-fit: cover;
+        }
+
+        .whyuscontainer {
+            background-color: #41B188;
+            color: white;
+            padding: 5rem 5%;
+        }
+
+        .iconrow {
+            margin-top: 10%;
+        }
+
+        .icontextrow {
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 2rem;
+            font-weight: 200;
+            margin-top: 2%;
+        }
+
+        .countrycontainer {
+            padding: 5rem 5%;
+            padding-bottom: 0;
+            color: #333333;
+        }
+
+        .countrytitle {
+            font-size: 5vw;
+            font-weight: 150;
+            color: #333333;
+            margin: 0;
+            margin-top: 3%;
+            white-space: nowrap;
+        }
+
+        .countrydropdown {
+            width: 100%;
+            text-align: left;
+            background-color: white;
+            color: #333333;
+            font-weight: 300;
+            border: 1px white solid;
+        }
+
+        .countrydropdown:hover {
+            background-color: #41B188;
+            color: white;
+            border: 1px white solid;
+        }
+
+        .dropdown-item:active{
+            background-color: #8b8b8b;
+            color:white;
+        }
+
+        .dropdown-toggle::after {
+            display: inline-block;
+            margin-left: 0.255rem;
+            vertical-align: 0.255rem;
+            content: "";
+            border-top: 0.3rem solid;
+            border-right: 0.3rem solid transparent;
+            border-bottom: 0;
+            border-left: 0.3rem solid transparent;
+            right: 0;
+        }
+
+        .dropdown-menu {
+            width: 100%;
+            max-height: 10rem;
+            overflow-y: auto;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 0;
+        }
+
+        .recommplancontainer {
+            padding: 0;
+            height: auto;
+            border: 1px solid #333333;
+        }
+
+        .recommplancontainer .button {
+            color: #333333;
+            border-bottom-color: #333333;
+        }
+
+        .recommplancontainer .button:hover {
+            background-color: #41B188;
+            border-bottom-color: #41B188;
+            color: white;
+        }
+
+        .recommplantitle {
+            font-size: 2rem;
+            font-weight: 400;
+        }
+
+        .planname {
+            margin-top: 5%;
+            margin-bottom: 5%;
+            font-size: 3.5vw;
+            color: #41B188;
+
+        }
+
+        .plannamefadein {
+            animation: fadein 1s ease-in-out -0.1s;
+        }
+
+        .plannamefadeout {
+            animation: fadeout 0.6s ease-in-out -0.1s;
+        }
+
+        @keyframes fadeout {
+            from {
+                opacity: 100;
+            }
+
+            to {
+                opacity: 0;
+            }
+
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+
+        }
+
+        .planmoredetails {
+            text-decoration-line: underline;
+            text-decoration-thickness: 1px;
+            transition: 0.3s ease-in-out;
+            font-size: 1.25rem;
+        }
+
+        .planmoredetails:hover {
+            color: #41B188;
+        }
+
+        .detailsbtn {
+            margin-bottom: 35%;
+            font-weight: 300;
+        }
+
+        .pcrcontainer {
+            padding: 5rem 5%;
+            background-color: white;
+        }
+
+        .pcrcontainer .button {
+            color: #333333;
+            border-bottom-color: #333333;
+        }
+
+        .pcrcontainer .button:hover {
+            background-color: #41B188;
+            color: white;
+            border-bottom-color:white;
+        }
+
+        /* Start of Footer CSS*/
+        .footer-container {
+            background-color: #41B188;
+            color: white;
+            font-size: 1rem;
+            padding: 5rem 5%;
+        }
+
+        .quicklinks {
+            color: white;
+            transition: 0.2s ease-in-out
+        }
+
+        .quicklinks:hover {
+            color: #FEBB60;
+        }
+
+        .quicklinksdiv {
+            padding: 0.5rem;
+        }
+
+        .contactdiv {
+            padding: 0.5rem;
+        }
+
+        .footer-logo {
+            color: white;
+            margin: 4%;
+            transition: 0.2s ease-in-out;
+        }
+
+        .footer-logo:hover {
+            color: #FEBB60;
+        }
+        /*End of footer css*/
+
+        /* responsiveness */
+        @media (max-width: 992px) {
+            .lg-display {
+                display: none;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .lg-hidden {
+                display: none;
+            }
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 400;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="container-fluid d-flex justify-content-between align-items-center p-3 flex-wrap position-fixed" style="z-index: 10000; background-color: white" id="navbar">
+        <div>
+            <a href="index.html">
+                <h1 style="font-size: 2rem; font-weight: 400; color: #41B188">
+                    Aurora<span style="color: #333333">Medical</span>
+                </h1>
+            </a>
+        </div>
+
+        <div class="d-flex align-items-center" style="gap: 1rem;">
+            <div class="p-2"><a href="./pages/products.html" class="navbtn hover-underline-animation">Our Services</a></div>
+            <div class="p-2"><a href="./pages/FAQ.html" class="navbtn hover-underline-animation">FAQ</a></div>
+            <div class="p-2"><a href="./pages/contact-us.html" class="navbtn hover-underline-animation">Contact Us</a></div>
+            <div class="p-2"><a href="./pages/blog.html" class="navbtn hover-underline-animation">News</a></div>
+            <div class="p-2"><a href="./pages/booknow.html"><button class="bookbtn p-2">Book Now</button></a></div>
+        </div>
+    </nav>
+
+    <!-- space holder -->
+    <nav class="container-fluid" id="space-holder">
+    </nav>
+
+    <!--Hero section-->
+    <section class="hero-banner container-fluid d-flex align-items-center justify-content-center">
+        <div class="text-center">
+            <h1 class="herotitle">
+                Everything you need for travel
+            </h1>
+            <p class="pt-4 herotext text-center">
+                We check the regulations in every country and offer the best prices in Singapore to provide everything you need to travel overseas during the pandemic.
+            </p>
+            <a href="./pages/booknow.html">
+                <button class="button mt-5" id="slide-to-form-btn">
+                    Book Now
+                </button>
+            </a>
+        </div>
+    </section>
+    
+    <!--Why Us Section-->
+    <div class="container-fluid whyuscontainer">
+        <h1 style="font-size: 4rem" class="text-center">
+            Why Us?
+        </h1>
+        <div class="row text-center mt-5 gy-4">
+            <div class="col-lg-4 col-md-12 p-3">
+                <i class="fa-regular fa-clock fa-6x"></i>
+                <h2 class="mt-4" style="font-weight: 700">Fast</h2>
+                <p class="mt-2">
+                    Get your result within <b>24 hrs </b>
+                </p> 
+            </div>
+            <div class="col-lg-4 col-md-12 p-3">
+                <i class="fa-solid fa-globe fa-6x"></i>
+                <h2 class="mt-4" style="font-weight: 700">Valid</h2>
+                <p class="mt-2">
+                    We assure you the validity of our results in sync with up-to-date <b>border info</b>
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-12 p-3">
+                <i class="fa-solid fa-arrow-trend-down fa-6x"></i>
+                <h2 class="mt-4" style="font-weight: 700">Low-Cost</h2>
+                <p class="mt-2">
+                    We offer you the <b>lowest price</b> aross the island
+                </p>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="./pages/about-us.html">
+                <button class="button mt-5" id="slide-to-form-btn">
+                    Learn more about us
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <!--Country selection Title-->
+    <div class="container-fluid countrycontainer" id="package-recommendation">
+        <h1 style="font-size: 3rem;" class="text-center">
+            Get a curated plan for your destination
+        </h1>
+
+        <div class="w-75 p-4 mx-auto my-5" style="background-color:#41B188; color: white;">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-12 py-2" style="font-size: 1.25rem; font-weight: 400;">
+                    Select your destination 
+                </div>
+                <div class="col-lg-7 col-md-12 py-2">
+                    <div class="row dropdownrow">
+                        <div class="col-12">
+                            <div class="dropdown-center ">
+                                <button class="btn btn-secondary dropdown-toggle countrydropdown rounded-0 text-center"
+                                    type="button" data-bs-toggle="dropdown" aria-expanded="false" id="countrydopdownbtn">
+                                    <span class="" id="countrydopdownbtnspan"></span>
+                                    <span id="countrydopdownbtntext" style="font-size: 1rem;">Select a Country</span>
+                                </button>
+                                <ul class="dropdown-menu shadow">
+                                    <li><a class="dropdown-item" id="dropdownbtnChina"><span class="fi fi-cn"></span> China</a></li>
+                                    <li><a class="dropdown-item" id="dropdownbtnChina"><span class="fi fi-in"></span> India</a></li>
+                                    <li><a class="dropdown-item" id="dropdownbtnChina"><span class="fi fi-ph"></span> Philippines</a></li>
+                                    <li><a class="dropdown-item" id="dropdownbtnChina"><span class="fi fi-mm"></span> Myanmar</a></li>
+                                    <li><a class="dropdown-item" id="dropdownbtnFrance"><span class="fi fi-fr"></span> France</a>
+                                    </li>
+                                    <li><a class="dropdown-item" id="dropdownbtnGermany"><span class="fi fi-de"></span> Germany</a>
+                                    </li>
+                                    <li><a class="dropdown-item" id="dropdownbtnItaly"><span class="fi fi-it"></span> Italy</a></li>
+                                    <li><a class="dropdown-item" id="dropdownbtnKorea"><span class="fi fi-kr"></span> Korea</a></li>
+                                    <li><a class="dropdown-item" id="dropdownbtnMexico"><span class="fi fi-mx"></span> Mexico</a>
+                                    </li>
+                                    <li><a class="dropdown-item" id="dropdownbtnSpain"><span class="fi fi-es"></span> Spain</a></li>
+                                    <li><a class="dropdown-item" id="dropdownbtnTaiwan"><span class="fi fi-tw"></span> Taiwan</a>
+                                    </li>
+                                    <li><a class="dropdown-item" id="dropdownbtnThailand"><span class="fi fi-th"></span>
+                                            Thailand</a></li>
+                                    <li><a class="dropdown-item" id="dropdownbtnTurkey"><span class="fi fi-tr"></span> Turkey</a>
+                                    </li>
+                                    <li><a class="dropdown-item" id="dropdownbtnUnitedKingdom"><span class="fi fi-gb"></span> United
+                                            Kingdom</a></li>
+                                    <li><a class="dropdown-item" id="dropdownbtnUnitedStates"><span class="fi fi-us"></span> United
+                                            States</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-12 py-2" style="font-size: 1.25rem; font-weight: 400;">
+                    Number of people
+                </div>
+                <div class="col-lg-7 col-md-12 py-2">
+                    <div class="row mx-auto align-items-center">
+                        <div class="col-4" style="padding-left: 0;">
+                            <button style="background-color: white; color: #333333; border: none;" class="px-3 py-1 d-block" id="decrement-people-count-btn">
+                                -
+                            </button>
+                        </div>
+                        <div class="col-4 text-center" id="people-count" style="font-weight: 400;">1</div>
+                        <div class="col-4 d-flex justify-content-end" style="padding-right: 0;">
+                            <button style="background-color: white; color: #333333; border: none" class="px-3 py-1 d-block" id="increment-people-count-btn">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--Box for recommended Plan-->
+        <div class="recommplancontainer w-75 my-5 mx-auto" style="color: #333333;">
+            <h2 class="text-center display-6 mt-5" style="font-size: 3rem;">
+                Recommended Plan
+            </h2>
+
+            <div class="w-50 row mx-auto align-items-center mt-5 gy-4">
+                <div class="col-lg-4 col-md-12">
+                    <div class="w-100 text-center d-flex flex-column justify-content-center" style="aspect-ratio: 1 / 1; background-color: #41B188; border-radius: 50%;">
+                        <i class="fa-solid fa-syringe fa-4x" style="color: white"></i>
+                    </div>
+                    <p class="text-center mt-3" style="font-size: 1.5rem;">Serology Test</p>
+                </div>
+                <div class="col-lg-4 col-md-12 display-6 text-center"> + </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="w-100 text-center d-flex flex-column justify-content-center" style="aspect-ratio: 1 / 1; background-color: #41B188; border-radius: 50%;">
+                        <i class="fa-solid fa-vial fa-4x" style="color: white"></i>
+                    </div>
+                    <p class="text-center mt-3" style="font-size: 1.5rem;">PCR Test</p>
+                </div>
+            </div>
+
+            <div class="mt-5 text-center">
+                <div id="detailsline2" style="font-size: 1.25rem;">Results within 24 hours</div>
+                <div id="detailsline3" style="font-size: 1.25rem;">Express Delivery</div>
+            </div>
+
+            <!--Plan details-->
+            <div class="row planmoredetailsrow text-center mt-5">
+                <div class="col"><a href="./pages/countries.html" class="planmoredetails">See restrictions of your destination</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="0.9rem" height="0.9rem" fill="currentColor"
+                        class="bi bi-arrow-up-right" viewBox="0 0 16 16" style="color:#333333;">
+                        <path fill-rule="evenodd"
+                            d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z" />
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="row w-50 mx-auto mt-5" id="multiple-persons-price-display" style="display: none;">
+                <div class="col-lg-6 col-md-12">
+                    <p class="text-center display-6" style="text-decoration:line-through; font-weight: 200;" id="ori-price">
+                        S$138
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <p class="text-center display-6" style="color:#41B188;" id="discounted-price">
+                        S$128
+                    </p>
+                </div>
+            </div>
+
+            <div class="w-50 mx-auto mt-5" id="single-person-price-display">
+                <p class="text-center display-6" style="color:#41B188;">
+                    S$69
+                </p>
+            </div>
+
+            <!--Buy plan button-->
+            <div class="text-center">
+                <a href="./pages/booknow.html">
+                    <button class="button my-5" id="slide-to-form-btn">
+                        Book Now
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <!--Dropdown for country selection-->
+
+        
+
+    <hr class="mx-auto" style="width: 90%">
+
+    <!--PCR Test Section-->
+    <div class="container-fluid pcrcontainer" style="color:#333333">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 text-start d-flex flex-column justify-content-center">
+                <h1 style="font-size: 4rem">
+                    PCR Test
+                </h1>
+                <h2 style="font-size: 1.5rem;" class="mt-5">
+                    Result Within 6 Hours
+                </h2>
+                <p>
+                    Get your PCR test done in a clinic near you, or comfortably at home. Group and family bookings available. All results would be emailed to you within 6 hours after the test.
+                </p>
+                <h2 style="font-size: 1.5rem;">
+                    Best Price Island-Wide
+                </h2>
+                <p>
+                    We Guarantee our price to be the best island-wide. If you find any clinic that provides services with a better price, we beat it with 50% off.
+                </p>
+                <h2 style="font-size: 1.5rem;">
+                    100% Comply with Newest Policies
+                </h2>
+                <p>
+                    We guarantee our services comply with the newest regulations of your destination authorities. Book from us to ensure you travel with correct documents required.
+                </p>
+                <div class="text-start">
+                    <a href="./pages/cart_pcr_prefilled.html">
+                        <button class="button mt-4" id="slide-to-form-btn">
+                            Buy Plan
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 text-center p-3">
+                <img class="w-100 h-100 lg-display"
+                        src="https://www.rafflesmedicalgroup.com/wp-content/uploads/2021/03/covid-test-header.jpg"
+                        alt="">
+            </div>
+        </div>
+    </div>
+
+    <hr class="mx-auto" style="width: 90%;">
+
+    <!--ART Test Section-->
+    <div class="container-fluid pcrcontainer mb-5" style="color:#333333">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 text-start d-flex flex-column justify-content-center">
+                <h1 style="font-size: 4rem">
+                    Supervised ART Test
+                </h1>
+                <h2 style="font-size: 1.5rem;" class="mt-5">
+                    Result Within 4 Hours
+                </h2>
+                <p>
+                    Supervised Antigen Rapid Test (ART Test) by an approved provider. Receive certified results via email or SMS.
+                </p>
+                <h2 style="font-size: 1.5rem;">
+                    Online Supervised ART 
+                </h2>
+                <p>
+                    Get tested anywhere you are, via an online supervised ART on the Doctor Anywhere mobile app. Certified results via email or SMS. Results would be available within 2 Hours
+                </p>
+                <div class="text-start">
+                    <a href="./pages/cart_art_prefilled.html">
+                        <button class="button mt-4" id="slide-to-form-btn">
+                            Buy Plan
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 text-center p-3">
+                <img class="w-100 h-100 lg-display"
+                        src="https://www.parkwayeast.com.sg/images/default-source/default-album/art-self-test-children-main-d.jpg?sfvrsn=5b18d811_2"
+                        alt="">
+            </div>
+        </div>
+    </div>
+    
+    <!--Enquiry-->
+    <div class="container-fluid text-center" style="padding: 5rem 5%; background-image: url(https://img.freepik.com/premium-photo/asian-senior-patient-having-consultation-with-doctor_1339-79722.jpg?w=2000); background-position: center; background-color: rgba(0, 0, 0, 0.544); background-repeat: no-repeat; background-size: cover; background-blend-mode: darken; color: white;">
+        <h1 style="font-size: 4rem;">
+            Got Questions?
+        </h1>
+        <p style="font-size: 1.25rem;">
+            Get in touch with us by sending an enquiry and our team will be glad to help.
+        </p>
+        <a href="./pages/contact-us.html">
+            <button class="button mt-5" id="slide-to-form-btn">
+                Contact Us
+            </button>
+        </a>
+    </div>
+
+    <!--Footer-->
+    <div class="container-fluid footer-container">
+        <div class="row">
+            <div class="col-4 text-center px-2">
+                <div class="quicklinksdiv"><a href="./pages/about-us.html" class="quicklinks">About Us</a></div>
+                <div class="quicklinksdiv"><a href="./pages/FAQ.html" class="quicklinks">FAQ</a></div>
+                <div class="quicklinksdiv"><a href="./pages/blog.html" class="quicklinks">News</a></div>
+                <div class="quicklinksdiv"><a href="./pages/sitemap.html" class="quicklinks">Sitemap</a></div>
+                <div class="quicklinksdiv"><a href="./pages/pdpc.html" class="quicklinks">PDPC</a></div>
+            </div>
+
+            <div class="col-4 text-center px-2" style="font-weight: 400;">
+                <div class="quicklinksdiv"><a href="./pages/contact-us.html#contact-info" class="quicklinks midlinks">Find a Clinic</a></div>
+                <div class="quicklinksdiv"><a href="index.html#package-recommendation" class="quicklinks midlinks">Tests for Travel</a></div>
+                <div class="quicklinksdiv"><a href="./pages/booknow.html" class="quicklinks midlinks">Book an Appointment</a></div>
+                <div class="quicklinksdiv"><a href="./pages/contact-us.html" class="quicklinks midlinks">Make An Enquiry</a></div>
+            </div>
+
+            <div class="col-4 text-center px-2">
+                <div class="contactdiv">+65 6873 7432</div>
+                <div class="contactdiv">contact@aurora.com</div>
+                <div class="contactdiv">21 Nanyang Link Singapore 637371</div>
+            </div>
+        </div>
+
+        <!--Soical media-->
+        <div class="row">
+            <div class="col-12 text-center">
+                <!--LinkedIn-->
+                <a href="https://www.linkedin.com/in/aurora-medical/" target="_blank" class=""><svg
+                        xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-linkedin footer-logo" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                    </svg></a>
+
+                <!--Youtube-->
+                <a href="https://www.youtube.com/channel/UCXy9-1P-8XC-Ag-PZaXsZtw" target="_blank" class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-youtube footer-logo" viewBox="0 0 16 16">
+                        <path
+                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                    </svg>
+                </a>
+
+                <!--Facebook-->
+                <a href="https://www.facebook.com" target="_blank" class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-facebook footer-logo" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    </svg>
+                </a>
+
+                <!--Instagram-->
+                <a href="https://www.instagram.com" target="_blank" class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-instagram footer-logo " viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    </svg>
+                </a>
+
+                <!--Tik Tok-->
+                <a href="https://www.tiktok.com/en/" target="_blank" class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-tiktok footer-logo " viewBox="0 0 16 16">
+                        <path
+                            d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z" />
+                    </svg>
+                </a>
+
+                <!--Twitter-->
+                <a href="https://twitter.com" target="_blank" class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-twitter footer-logo" viewBox="0 0 16 16">
+                        <path
+                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+
+        <!--Copyright-->
+        <div class="text-center">
+            <small>Copyrights &copy; Marcel, Garry, Brandon, Ricardo 2022. All Rights Reserved</small>
+        </div>
+    </div>
+    <!--End of footer-->
+
+    <script src="js\home.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/update_space_holder_height.js"></script>
+    <script>
+        let nav = document.querySelector('#navbar');
+        let hero = document.querySelector('.hero-banner')
+        const events = ['load', 'resize'];
+        events.forEach((event) => {
+            window.addEventListener(event, (e) => {
+                hero.style.height = "calc( 100vh - " + nav.offsetHeight + "px )";
+            })
+        })
+
+        // update package prices
+        let increment_btn = document.querySelector('#increment-people-count-btn');
+        let decrement_btn = document.querySelector('#decrement-people-count-btn');
+        let people_count_display_el = document.querySelector('#people-count');
+        let ori_price_display_el = document.querySelector('#ori-price');
+        let discounted_price_display_el = document.querySelector('#discounted-price');
+        let single_person_price_display = document.querySelector('#single-person-price-display');
+        let multiple_persons_price_display = document.querySelector('#multiple-persons-price-display');
+
+        // states
+        let count = parseInt(people_count_display_el.innerHTML);
+        let single_price = 69;
+
+        const increment_num = (el) => {
+            count ++;
+            if (count > 5) {
+                return; 
+            } else if (count > 1) {
+                single_person_price_display.style.display = "none";
+                multiple_persons_price_display.style.display = "flex";
+            }
+            el.innerHTML = count;
+            ori_price_display_el.innerHTML = 'S$' + parseInt(count * single_price);
+            discounted_price_display_el.innerHTML = 'S$' + parseInt(count * single_price * 0.8);
+        };
+
+        const decrement_num = (el) => {
+            count --;
+            if (count < 1) {
+                return;
+            } else if (count < 2) {
+                single_person_price_display.style.display = "block";
+                multiple_persons_price_display.style.display = "none";
+            }
+            el.innerHTML = count;
+            ori_price_display_el.innerHTML = 'S$' + parseInt(count * single_price);
+            discounted_price_display_el.innerHTML = 'S$' + parseInt(count * single_price * 0.8);
+        };
+
+        increment_btn.addEventListener('click', (e) => {increment_num(people_count_display_el)});
+        decrement_btn.addEventListener('click', (e) => {decrement_num(people_count_display_el)});
+    </script>
+</body>
+
+</html>

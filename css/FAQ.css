@@ -1,0 +1,338 @@
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+}
+
+p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+::selection {
+    color: white;
+    background: #FEBB60;
+}
+
+.row {
+    width: 100%;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/*Start of Navbar*/
+.navbtn {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: #41B188;
+    cursor: pointer;
+    font-size: 1rem
+}
+
+.navbtn:hover {
+    color: #41B188;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #333333;
+    font-weight: 300;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #41B188;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.bookbtn {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    border: none;
+    white-space: nowrap;
+    font-size: 1rem;
+    transition: 0.25s ease-in-out;
+    color: white;
+    background-color: #41B188;
+}
+
+.bookbtn:hover {
+    color: white;
+    background-color: #FEBB60;
+    border: 0px #FEBB60 solid;
+}
+
+/*Navbar css ends here*/
+
+.hero-banner {
+    height: 30vw;
+    padding: 5%;
+    color: white;
+    background-image: url(../assets/images/faq_hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: #00000090;
+}
+
+.hero .text-area {
+    height: 100%;
+    padding: 0 1rem 3 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #9dc1dd8a;
+    text-align: center;
+}
+
+.hero {
+    height: 100vw;
+
+    width: auto;
+    /* background-image: url(./covid_test.jpeg); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero h1 {
+    font-size: 3.5rem !important;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 1.2vw;
+
+}
+
+.hero .row {
+    height: 100%;
+}
+
+
+
+.hero .btn {
+    width: 25%;
+    border-color: #1B4965 !important;
+    background-color: #1B4965 !important;
+    color: #f5feff !important;
+}
+
+.hero .btn:hover {
+    background-color: transparent !important;
+    color: #1B4965 !important;
+}
+
+.text_container {
+    padding: 50px 100px 10px 100px !important;
+}
+
+.text_container h1 {
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 400;
+    text-decoration: none;
+    color: #34906e;
+    cursor: pointer;
+    font-size: 5vw !important;
+}
+
+.text_container .text-area-left {
+    padding: 0px 100px 0px 0px !important;
+}
+
+.text_container .list-group {
+    padding-right: 10px !important;
+}
+
+
+.text_container .list-group-item {
+    align-self: left !important;
+    font-family: 'Playfair Display', serif !important;
+}
+
+.news_box_group {
+    padding: 50px 150px 0px 150px;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news_box_group .area_major {
+    height: 300px;
+    width: 65%;
+    background: url(./covid_test.jpeg) no-repeat;
+    background-size: cover;
+}
+
+.news_box_group .text_area_major {
+    background-color: #ffffffb2 !important;
+    padding: 150px 50px 50px 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.news_box_group .title {
+    font-family: 'Roboto Serif', serif !important;
+    color: red;
+    font-size: 1.6vw;
+}
+
+.news_box_group .content {
+    color: black;
+    font-size: 2vw;
+    font-family: 'Playfair Display', serif;
+}
+
+.news_box_group .area_sub {
+    height: 300px;
+    width: 32%;
+    background: url(./covid_test.jpeg) no-repeat;
+    background-size: 100% 60%;
+}
+
+.news_box_group .text_area_sub {
+    width: 100%;
+    padding-top: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.faq_box {
+    padding: 10px 180px 100px 180px;
+    justify-content: center;
+}
+
+.faq_box .group_1 {
+    padding-bottom: 30px;
+}
+
+
+.faq_title {
+    padding: 10px 180px 10px 180px;
+    text-align: center;
+}
+
+.faq_title .text_area {
+    font-family: 'Playfair Display', serif;
+    color: green;
+    font-size: 2vw;
+
+}
+
+.place_holder {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.accordion,
+.accordion-item,
+.accordion-header {
+    border-radius: 0 !important;
+}
+
+/*Change the active accordion to be green*/
+.accordion-button:hover,
+.accordion-button:focus,
+.accordion-button:active {
+    background-color: #41B188;
+    color: white;
+    border-radius: 0 !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #FFF !important;
+    background-color: #41B188 !important;
+    border-radius: 0 !important;
+}
+
+/*Arrow change to white*/
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0) invert(100)
+}
+
+.accordion-button:not(.collapsed)::after:hover{
+    filter: brightness(0) invert(100)
+}
+
+
+
+
+/* Start of Footer CSS*/
+.footer-container {
+    background-color: #41B188;
+    color: white;
+    font-size: 1rem;
+    padding: 5rem 5%;
+}
+
+.quicklinks {
+    color: white;
+    transition: 0.2s ease-in-out
+}
+
+.quicklinks:hover {
+    color: #FEBB60;
+}
+
+.quicklinksdiv {
+    padding: 0.5rem;
+}
+
+.contactdiv {
+    padding: 0.5rem;
+}
+
+.footer-logo {
+    color: white;
+    margin: 4%;
+    transition: 0.2s ease-in-out;
+}
+
+.footer-logo:hover {
+    color: #FEBB60;
+}
+
+/*End of footer css*/
+.button {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 1rem;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    color: #112F24;
+    background-color: white;
+}
